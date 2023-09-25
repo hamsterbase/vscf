@@ -15,6 +15,8 @@ VS Code uses very few third-party dependencies and implements various functional
 
 Therefore, we can treat it as a framework. This library is mainly used for batch copying of the VS Code source code. It also utilizes `patch.ts` to make some modifications to the original code by removing unnecessary code.
 
+This project is based on the release/1.78 of VS Code.
+
 ## Usage
 
 1. Add a .env file to configure some settings:
