@@ -7,8 +7,11 @@ import {
 
 export { KeybindingsRegistry, KeybindingWeight, IKeybindings, IKeybindingItem };
 
-import { KeybindingsSchemaContribution } from "vs/platform/keybinding/common/keybinding";
-export { KeybindingsSchemaContribution };
+import {
+  KeybindingsSchemaContribution,
+  IKeybindingService,
+} from "vs/platform/keybinding/common/keybinding";
+export { KeybindingsSchemaContribution, IKeybindingService };
 
 import { ResolvedKeybindingItem } from "vs/platform/keybinding/common/resolvedKeybindingItem";
 import { USLayoutResolvedKeybinding } from "vs/platform/keybinding/common/usLayoutResolvedKeybinding";
