@@ -1,1 +1,1 @@
-export { join } from "vs/base/common/path";
+export { join, dirname, extname, resolve } from "vs/base/common/path";

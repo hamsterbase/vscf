@@ -1,1 +1,1 @@
-export { DeferredPromise } from "vs/base/common/async";
+export { DeferredPromise, timeout } from "vs/base/common/async";

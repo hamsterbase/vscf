@@ -3,6 +3,7 @@ export {
   IInstantiationService,
   createDecorator,
   refineServiceDecorator,
+  ServicesAccessor,
 } from "vs/platform/instantiation/common/instantiation";
 export type { ServiceIdentifier } from "vs/platform/instantiation/common/instantiation";
 export { InstantiationService } from "vs/platform/instantiation/common/instantiationService";
