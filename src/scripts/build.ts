@@ -31,6 +31,7 @@ const projectRoot = join(__dirname, "../..");
 
       //di
       "src/vs/platform/instantiation/common/instantiationService.ts",
+      "src/vs/platform/instantiation/common/extensions.ts",
 
       //action
       "src/vs/platform/action/common/action.ts",

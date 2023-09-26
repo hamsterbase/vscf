@@ -8,3 +8,6 @@ export {
 export type { ServiceIdentifier } from "vs/platform/instantiation/common/instantiation";
 export { InstantiationService } from "vs/platform/instantiation/common/instantiationService";
 export { ServiceCollection } from "vs/platform/instantiation/common/serviceCollection";
+
+import { getSingletonServiceDescriptors } from "vs/platform/instantiation/common/extensions";
+export { getSingletonServiceDescriptors };
