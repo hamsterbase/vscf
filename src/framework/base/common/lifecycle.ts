@@ -1,1 +1,7 @@
-export { IDisposable, Disposable } from "vs/base/common/lifecycle";
+export {
+  IDisposable,
+  Disposable,
+  DisposableStore,
+  toDisposable,
+  combinedDisposable,
+} from "vs/base/common/lifecycle";
