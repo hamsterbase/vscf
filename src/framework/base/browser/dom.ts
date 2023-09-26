@@ -1,1 +1,5 @@
-export { addDisposableListener, EventType } from "vs/base/browser/dom";
+export {
+  addDisposableListener,
+  EventType,
+  trackFocus,
+} from "vs/base/browser/dom";

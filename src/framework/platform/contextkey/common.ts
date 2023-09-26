@@ -13,3 +13,7 @@ export {
   RawContextKey,
   ContextKeyExpression,
 };
+
+import { InputFocusedContext } from "vs/platform/contextkey/common/contextkeys";
+
+export { InputFocusedContext };
