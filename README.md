@@ -28,6 +28,17 @@ TARGET_DIR=project/vscf # Target directory after copying
 
 2. Run the `npm run eject` command to copy the entire framework to the target directory.
 
+3. Add alias
+
+```json
+{
+  "paths": {
+    "vscf/*": ["src/vscf/*"],
+    "vs/*": ["src/vscf/internal/*"]
+  }
+}
+```
+
 ## How to Debug
 
 1. Add a .env file to configure some settings:
