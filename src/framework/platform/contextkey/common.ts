@@ -14,6 +14,9 @@ export {
   ContextKeyExpression,
 };
 
-import { InputFocusedContext } from "vs/platform/contextkey/common/contextkeys";
+import {
+  InputFocusedContext,
+  InputFocusedContextKey,
+} from "vs/platform/contextkey/common/contextkeys";
 
-export { InputFocusedContext };
+export { InputFocusedContext, InputFocusedContextKey };

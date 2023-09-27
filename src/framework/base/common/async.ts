@@ -1,1 +1,5 @@
-export { DeferredPromise, timeout } from "vs/base/common/async";
+export {
+  DeferredPromise,
+  timeout,
+  RunOnceScheduler,
+} from "vs/base/common/async";
