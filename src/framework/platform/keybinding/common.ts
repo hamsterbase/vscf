@@ -1,27 +1,20 @@
-import {
+export {
   KeybindingsRegistry,
   KeybindingWeight,
-  IKeybindings,
-  IKeybindingItem,
 } from "vs/platform/keybinding/common/keybindingsRegistry";
 
-export { KeybindingsRegistry, KeybindingWeight, IKeybindings, IKeybindingItem };
+export type {
+  IKeybindingItem,
+  IKeybindings,
+} from "vs/platform/keybinding/common/keybindingsRegistry";
 
-import {
-  KeybindingsSchemaContribution,
-  IKeybindingService,
-} from "vs/platform/keybinding/common/keybinding";
-export { KeybindingsSchemaContribution, IKeybindingService };
+export type { KeybindingsSchemaContribution } from "vs/platform/keybinding/common/keybinding";
 
-import { ResolvedKeybindingItem } from "vs/platform/keybinding/common/resolvedKeybindingItem";
-import { USLayoutResolvedKeybinding } from "vs/platform/keybinding/common/usLayoutResolvedKeybinding";
+export { IKeybindingService } from "vs/platform/keybinding/common/keybinding";
 
-export { ResolvedKeybindingItem, USLayoutResolvedKeybinding };
+export { ResolvedKeybindingItem } from "vs/platform/keybinding/common/resolvedKeybindingItem";
+export { USLayoutResolvedKeybinding } from "vs/platform/keybinding/common/usLayoutResolvedKeybinding";
 
-import { AbstractKeybindingService } from "vs/platform/keybinding/common/abstractKeybindingService";
+export { AbstractKeybindingService } from "vs/platform/keybinding/common/abstractKeybindingService";
 
-export { AbstractKeybindingService };
-
-import { KeybindingResolver } from "vs/platform/keybinding/common/keybindingResolver";
-
-export { KeybindingResolver };
+export { KeybindingResolver } from "vs/platform/keybinding/common/keybindingResolver";

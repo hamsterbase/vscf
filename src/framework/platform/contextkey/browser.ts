@@ -1,3 +1,1 @@
-import { ContextKeyService } from "vs/platform/contextkey/browser/contextKeyService";
-
-export { ContextKeyService };
+export { ContextKeyService } from "vs/platform/contextkey/browser/contextKeyService";

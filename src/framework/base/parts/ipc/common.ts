@@ -1,26 +1,19 @@
-import {
-  ClientConnectionEvent,
+export {
   IPCServer,
   ProxyChannel,
   IPCClient,
 } from "vs/base/parts/ipc/common/ipc";
 
-export { ClientConnectionEvent, IPCServer, ProxyChannel, IPCClient };
+export type { ClientConnectionEvent } from "vs/base/parts/ipc/common/ipc";
 
-import {
-  ISocket,
+export {
   Protocol,
-  SocketCloseEvent,
   SocketDiagnosticsEventType,
   SocketCloseEventType,
   SocketDiagnostics,
 } from "vs/base/parts/ipc/common/ipc.net";
 
-export {
+export type {
   ISocket,
-  Protocol,
   SocketCloseEvent,
-  SocketDiagnosticsEventType,
-  SocketCloseEventType,
-  SocketDiagnostics,
-};
+} from "vs/base/parts/ipc/common/ipc.net";
