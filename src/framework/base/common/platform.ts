@@ -1,1 +1,1 @@
-export { OS } from "vs/base/common/platform";
+export { OS, isLinuxSnap } from "vs/base/common/platform";
