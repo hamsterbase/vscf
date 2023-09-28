@@ -81,6 +81,11 @@ const projectRoot = join(__dirname, "../..");
       "src/vs/base/parts/ipc/common/ipc.mp.ts",
       "src/vs/base/parts/ipc/common/ipc.electron.ts",
       "src/vs/base/parts/ipc/browser/ipc.mp.ts",
+
+      "src/vs/platform/ipc/common/mainProcessService.ts",
+      "src/vs/platform/ipc/common/services.ts",
+      "src/vs/platform/ipc/electron-sandbox/mainProcessService.ts",
+      "src/vs/platform/ipc/electron-sandbox/services.ts",
     ],
     [
       "src/vs/platform/configuration/common/configuration.ts",
