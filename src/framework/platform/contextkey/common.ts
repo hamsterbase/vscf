@@ -1,6 +1,7 @@
 export type {
   IContextKey,
   ContextKeyExpression,
+  ContextKeyValue,
 } from "vs/platform/contextkey/common/contextkey";
 
 export {

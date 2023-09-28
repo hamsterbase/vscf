@@ -4,7 +4,11 @@ export {
   IPCClient,
 } from "vs/base/parts/ipc/common/ipc";
 
-export type { ClientConnectionEvent } from "vs/base/parts/ipc/common/ipc";
+export type {
+  ClientConnectionEvent,
+  IChannel,
+  IServerChannel,
+} from "vs/base/parts/ipc/common/ipc";
 
 export {
   Protocol,
