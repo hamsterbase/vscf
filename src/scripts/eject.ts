@@ -1,6 +1,6 @@
 import fs from "fs/promises";
-import { join } from "path";
-import { TargetDir } from "./config";
+import { join, resolve } from "path";
+import { TargetDir, ProductName } from "./config";
 
 (async () => {
   const projectRoot = join(__dirname, "../..");
@@ -21,4 +21,11 @@ import { TargetDir } from "./config";
       return !shouldIgnore;
     },
   });
+
+  const projectName = resolve(source, "internal/project.ts");
+  const content = (await fs.readFile(projectName, "utf8")).replace(
+    "__VSCF_PRODUCT_NAME__",
+    ProductName
+  );
+  await fs.writeFile(resolve(target, "internal/project.ts"), content);
 })();
