@@ -6,7 +6,7 @@
 import { globals, INodeProcess, IProcessEnvironment } from 'vs/base/common/platform';
 import { ISandboxConfiguration } from 'vs/base/parts/sandbox/common/sandboxTypes';
 import { IpcRenderer, ProcessMemoryInfo, WebFrame } from 'vs/base/parts/sandbox/electron-sandbox/electronTypes';
-import { projectName } from 'vs/project.patch'
+import { projectName } from 'vs/project'
 
 /**
  * In sandboxed renderers we cannot expose all of the `process` global of node.js
