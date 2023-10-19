@@ -8,6 +8,7 @@ import { Emitter, Event } from 'vs/base/common/event';
 import { IJSONSchema, IJSONSchemaMap } from 'vs/base/common/jsonSchema';
 import { assertNever } from 'vs/base/common/assert';
 import { IColorTheme } from 'vs/platform/theme/common/themeService';
+import { projectName } from 'vs/project'
 
 //  ------ API types
 
@@ -28,7 +29,7 @@ export interface ColorContribution {
  * @sample `editorSuggestWidget.background` is `--vscode-editorSuggestWidget-background`.
  */
 export function asCssVariableName(colorIdent: ColorIdentifier): string {
-	return `--vscode-${colorIdent.replace(/\./g, '-')}`;
+	return `--${projectName}-${colorIdent.replace(/\./g, '-')}`;
 }
 
 export function asCssVariable(color: ColorIdentifier): string {
