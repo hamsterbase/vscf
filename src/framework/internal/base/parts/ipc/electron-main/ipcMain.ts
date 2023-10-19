@@ -125,10 +125,10 @@ class ValidatedIpcMain implements Event.NodeEventEmitter {
 			return false; // unexpected URL
 		}
 
-		if (host !== 'vscode-app') {
-			onUnexpectedError(`Refused to handle ipcMain event for channel '${channel}' because of a bad origin of '${host}'.`);
-			return false; // unexpected sender
-		}
+		// if (host !== 'vscode-app') {
+		// 	onUnexpectedError(`Refused to handle ipcMain event for channel '${channel}' because of a bad origin of '${host}'.`);
+		// 	return false; // unexpected sender
+		// }
 
 		if (sender.parent !== null) {
 			onUnexpectedError(`Refused to handle ipcMain event for channel '${channel}' because sender of origin '${host}' is not a main frame.`);

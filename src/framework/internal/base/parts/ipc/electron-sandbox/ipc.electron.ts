@@ -9,6 +9,7 @@ import { IDisposable } from 'vs/base/common/lifecycle';
 import { IPCClient } from 'vs/base/parts/ipc/common/ipc';
 import { Protocol as ElectronProtocol } from 'vs/base/parts/ipc/common/ipc.electron';
 import { ipcRenderer } from 'vs/base/parts/sandbox/electron-sandbox/globals';
+import { projectName } from 'vs/project'
 
 /**
  * An implementation of `IPCClient` on top of Electron `ipcRenderer` IPC communication
@@ -19,8 +20,8 @@ export class Client extends IPCClient implements IDisposable {
 	private protocol: ElectronProtocol;
 
 	private static createProtocol(): ElectronProtocol {
-		const onMessage = Event.fromNodeEventEmitter<VSBuffer>(ipcRenderer, 'vscode:message', (_, message) => VSBuffer.wrap(message));
-		ipcRenderer.send('vscode:hello');
+		const onMessage = Event.fromNodeEventEmitter<VSBuffer>(ipcRenderer, `${projectName}:message`, (_, message) => VSBuffer.wrap(message));
+		ipcRenderer.send(`${projectName}:hello`);
 
 		return new ElectronProtocol(ipcRenderer, onMessage);
 	}
