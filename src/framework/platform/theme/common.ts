@@ -33,3 +33,11 @@ export {
   registerThemingParticipant,
   ThemingExtensions,
 };
+
+import {
+  ColorScheme,
+  isDark,
+  isHighContrast,
+} from "vs/platform/theme/common/theme";
+
+export { ColorScheme, isDark, isHighContrast };
