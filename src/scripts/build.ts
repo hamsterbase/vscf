@@ -90,7 +90,6 @@ const projectRoot = join(__dirname, "../..");
     [
       "src/vs/platform/configuration/common/configuration.ts",
       "src/vs/platform/environment/common/environment.ts",
-      "src/vs/platform/registry/common/platform.ts",
       "src/vs/base/common/codicons.ts",
     ]
   ).run();
