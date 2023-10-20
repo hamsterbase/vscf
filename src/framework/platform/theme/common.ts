@@ -1,7 +1,16 @@
-import { registerColor } from "vs/platform/theme/common/colorRegistry";
-import { Extensions as ColorRegistryExtensions } from "vs/platform/theme/common/colorRegistry";
+import {
+  registerColor,
+  asCssVariableName,
+  Extensions as ColorRegistryExtensions,
+  resolveColorValue,
+} from "vs/platform/theme/common/colorRegistry";
 
-export { registerColor, ColorRegistryExtensions };
+export {
+  registerColor,
+  ColorRegistryExtensions,
+  asCssVariableName,
+  resolveColorValue,
+};
 
 import type {
   IColorTheme,
