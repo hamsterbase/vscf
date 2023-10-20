@@ -5,7 +5,10 @@ import {
   resolveColorValue,
 } from "vs/platform/theme/common/colorRegistry";
 
+import type { IColorRegistry } from "vs/platform/theme/common/colorRegistry";
+
 export {
+  IColorRegistry,
   registerColor,
   ColorRegistryExtensions,
   asCssVariableName,
@@ -17,12 +20,16 @@ import type {
   IThemingRegistry,
 } from "vs/platform/theme/common/themeService";
 
-export type { IColorTheme, IThemingRegistry };
-
 import {
   IThemeService,
   registerThemingParticipant,
   Extensions as ThemingExtensions,
 } from "vs/platform/theme/common/themeService";
 
-export { IThemeService, registerThemingParticipant, ThemingExtensions };
+export {
+  IColorTheme,
+  IThemingRegistry,
+  IThemeService,
+  registerThemingParticipant,
+  ThemingExtensions,
+};
