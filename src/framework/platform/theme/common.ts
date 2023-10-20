@@ -1,6 +1,7 @@
 import { registerColor } from "vs/platform/theme/common/colorRegistry";
+import { Extensions as ColorRegistryExtensions } from "vs/platform/theme/common/colorRegistry";
 
-export { registerColor };
+export { registerColor, ColorRegistryExtensions };
 
 import type {
   IColorTheme,
@@ -12,7 +13,7 @@ export type { IColorTheme, IThemingRegistry };
 import {
   IThemeService,
   registerThemingParticipant,
-  Extensions,
+  Extensions as ThemingExtensions,
 } from "vs/platform/theme/common/themeService";
 
-export { IThemeService, registerThemingParticipant };
+export { IThemeService, registerThemingParticipant, ThemingExtensions };

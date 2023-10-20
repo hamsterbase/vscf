@@ -7,6 +7,7 @@ import { Color } from 'vs/base/common/color';
 import { Emitter, Event } from 'vs/base/common/event';
 import { IJSONSchema, IJSONSchemaMap } from 'vs/base/common/jsonSchema';
 import { assertNever } from 'vs/base/common/assert';
+import * as platform from 'vs/platform/registry/common/platform';
 import { IColorTheme } from 'vs/platform/theme/common/themeService';
 import { projectName } from 'vs/project'
 
@@ -193,6 +194,7 @@ class ColorRegistry implements IColorRegistry {
 }
 
 const colorRegistry = new ColorRegistry();
+platform.Registry.add(Extensions.ColorContribution, colorRegistry);
 
 
 export function registerColor(id: string, defaults: ColorDefaults | null, description: string, needsTransparency?: boolean, deprecationMessage?: string): ColorIdentifier {
