@@ -164,7 +164,7 @@ class ColorRegistry implements IColorRegistry {
 	public resolveDefaultColor(id: ColorIdentifier, theme: IColorTheme): Color | undefined {
 		const colorDesc = this.colorsById[id];
 		if (colorDesc && colorDesc.defaults) {
-			const colorValue = colorDesc.defaults[theme.type];
+			const colorValue = colorDesc.defaults[theme.type] ?? null;
 			return resolveColorValue(colorValue, theme);
 		}
 		return undefined;
