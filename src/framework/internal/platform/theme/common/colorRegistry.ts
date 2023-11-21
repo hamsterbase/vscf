@@ -63,8 +63,8 @@ export type ColorTransform =
 export interface ColorDefaults {
 	light: ColorValue | null;
 	dark: ColorValue | null;
-	hcDark: ColorValue | null;
-	hcLight: ColorValue | null;
+	hcDark?: ColorValue | null;
+	hcLight?: ColorValue | null;
 }
 
 
